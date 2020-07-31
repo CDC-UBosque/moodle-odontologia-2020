@@ -1,0 +1,59 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				//+menu
+				div#menu
+			
+				//- banner modulo 1
+				+banner
+				
+				h1 Propósitos/ objetivos de formación del módulo
+			
+				h3 Objetivos de formación del módulo: 
+				
+				ul
+					li Conocer las generalidades del turismo en el contexto global, regional y local.
+
+					li Identificar los conceptos asociados al turismo y sus tipologías en el contexto global, regional y local.
+
+					li Reconocer el lenguaje que permite delimitar el turismo de naturaleza.
+					
+				h3 Competencias: 
+				
+				ul
+					li Reconoce los diferentes momentos del turismo, así como las estadísticas con las tendencias históricas que evidencian su evolución.
+
+
+					li Incorpora los conceptos asociados al turismo, así como sus tipologías, en los distintos espacios de planificación territorial. 
+
+
+					li Diferencia el turismo de naturaleza y los elementos que lo componen 
+
+  
+				
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-1')
+				
+				//- progreso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=351046&chapterid=9792', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=351046&chapterid=9794', 'forward', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

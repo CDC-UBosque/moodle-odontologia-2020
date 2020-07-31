@@ -1,0 +1,181 @@
+//- ---------------------------- menu ------------------------------- //
+mixin menu
+	div#menu
+
+//- ---------------------------- footer ------------------------------- //
+mixin footer
+	div.container-fluid.footer
+		div.row-fluid
+			div © Todos los derechos reservados
+			
+mixin footer-interno
+	div.container-fluid.footer
+		div.row-fluid
+			div © Todos los derechos reservados
+			
+//- ---------------------------- banner ------------------------------- //
+mixin banner
+	div.banner-home#banner-home
+
+//- ---------------------------- paginador ------------------------------- //
+mixin link(href, name)
+	//- attributes == {class: "btn"}
+	a(href=href)= name
+	
+	//- +link('/foo', 'foo')(class="btn")
+
+mixin paginador(linkatras, class1, Anterior, linkadelante, class2, Siguiente)
+	div.progress-fullbar
+		div.pager
+			div.paginas
+				ul
+					li.previous
+						a(href=linkatras class=class1)
+							i.fa.fa-angle-left(aria-hidden="true")
+							| &nbsp;
+							span= Anterior 
+					li.next
+						a(href=linkadelante class=class2)
+							span= Siguiente 
+							| &nbsp;
+							i.fa.fa-angle-right(aria-hidden="true")
+			div.counter
+				<p><span class="eta"></span> (<!--<span class="words"></span>--> &cong; Tiempo de lectura )</p>
+			div.menuanchorbot
+				a(href="#menu") Menú
+				//- <a href="#" id="scrollup">Scroll</a>
+		div.progressContainer
+			div#progress.progress
+			
+			
+mixin paginador-menu
+	div.progress-fullbar
+		div.pager
+			div.paginas
+				ul
+					li.previous
+					li.next
+			div.counter
+				<p><span class="eta"></span> (<!--<span class="words"></span>--> &cong; Tiempo de lectura )</p>
+			div.menuanchorbot
+				a(href="#menu") Menú
+				//- <a href="#" id="scrollup">Scroll</a>
+		div.progressContainer
+			div#progress.progress
+			
+			
+			
+			
+			
+//- ---------------------------- progreso modulo ------------------------------- //
+mixin progreso-modulo(numero)
+	div.progreso
+		h2 Progreso módulo
+		div(id=numero)
+
+//- ---------------------------- material modulo ------------------------------- //
+mixin material-modulo(id)
+	div.container-fluid
+		div.row-fluid.wow.fadeInUp.material-modulo
+			div(id=id)
+			
+
+//- ---------------------------- Tables ------------------------------- //
+
+//- initialization
+- blocks = {}
+
+mixin set(key)
+	- blocks[key] = this.block
+
+//- mixin definition
+mixin tables-containers(caption)
+	table.table.table-striped
+		caption= caption
+			block
+			thead
+				- blocks.thead()
+			tbody
+				- blocks.tr()
+				
+				
+//- ---------------------------- Tabs ------------------------------- //
+mixin tabs-container
+	div.bs-docs
+		ul#myTab.nav.nav-tabs
+			block titles
+		div#myTabContent.tab-content
+			block content
+				
+mixin tabs-buttons(state, href, numero)
+	block
+	li(class=state)
+		a(href=href data-toggle='tab')= numero
+		
+mixin tabs-content-tab(state, in, numero)
+	block
+	div.tab-pane.fade(class=state in id=numero)
+		
+
+//- initialization
+- blocks = {}
+
+mixin set(key)
+	- blocks[key] = this.block
+
+//- mixin definition
+mixin tabs-containers
+	div.bs-docs
+		block
+		ul#myTab.nav.nav-tabs
+			- blocks.titles()
+		div#myTabContent.tab-content
+			- blocks.content()
+			
+			
+//- ---------------------------- image / video + caption mixin ------------------------------- //	
+mixin image-caption(alink, datalightbox, imagelink, imagealt)
+	div.banner-video.wow.fadeInUp
+		div.imagen
+			div#video
+				figure.galeria
+					a.example-image-link(href=alink data-lightbox=datalightbox)
+						img.example-image(src=imagelink alt=imagealt)
+		div.texto_imagen
+			div.img-footer
+				block
+				
+				
+//- ---------------------------- Video mixin ------------------------------- //
+mixin video(url)
+	div.banner-videos.wow.fadeInUp
+		div#video
+			div.embed-container
+				iframe(src=url) 
+				
+				
+				
+//- ---------------------------- Accordion mixin ------------------------------- //
+//- mixin container
+mixin accordion(numberid)
+	div.accordion(id= numberid)
+		block
+
+//- mixin accordion item		
+mixin accordion-item(dataparent, href, target, title)
+	div.accordion-group.wow.fadeInUp
+		div.accordion-heading
+			a.accordion-toggle(data-toggle='collapse' data-parent=dataparent href=href)
+				span= title
+		div.accordion-body.collapse(id= target)
+			div.accordion-inner
+				block
+				
+//- +accordion('numberid')
+
+//- +accordion-item('#dataparent', '#href', 'target', 'title')
+//- 	block title
+//-			title Logotipo Universidad El Bosque
+				
+				
+				

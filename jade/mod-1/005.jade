@@ -1,0 +1,112 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				//+menu
+				div#menu
+			
+				//- banner modulo 1
+				+banner
+				
+				h1 3.	Temas/estructura
+			
+				h3 3.3.	El turismo de Naturaleza
+				
+				p La Política Nacional para el turismo de naturaleza, (MinCIT, 2012), lo define como “aquel cuya oferta de productos y servicios se desarrolla en torno a un atractivo natural que se rige por principios de sostenibilidad”, por su parte la OMT lo define como, “El Turismo de naturaleza es todo tipo de turismo basado en la naturaleza, en la que la principal motivación es la observación y apreciación de la naturaleza, así como las culturas tradicionales”, la siguiente grafica propone un esquema general para comprender el turismo de naturaleza. 
+				
+				
+				//- ---------------- 
+				//- ---------------- Image / video + caption
+				//- ---------------- 		
+				+image-caption('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/turismo-territoriales/images/mod-1/006.jpg', 'example-1', 'https://ubosquemoodle.unbosque.edu.co/diseno/cursos/turismo-territoriales/images/mod-1/006.jpg', 'Texto para acompañar imagen')
+					span Gráfica 8. El turismo de naturaleza. Fuente: (MinCIT, 2012)
+
+
+
+				p A continuación, un caso asociado a cada una de las tipologías asociadas al turismo de naturaleza.
+				
+				h4 Ecoturismo - Avistamiento de aves
+				a(href="https://turismoi.co/tours/avistamiento-de-aves-en-dona-dora-alto-anchicaya" target='_blank') https://turismoi.co/tours/avistamiento-de-aves-en-dona-dora-alto-anchicaya
+				h4 Turismo de aventura - Cañón del río claro
+				a(href="http://www.rioclaroreservanatural.com/es/activities-events/actividades-guiadas/rafting/" target='_blank') http://www.rioclaroreservanatural.com/es/activities-events/actividades-guiadas/rafting/
+				h4 Agroturismo - Granja de la mamá Lulu
+				a(href="http://www.granjamamalulu.com/" target='_blank') http://www.granjamamalulu.com/
+				
+				p Reconociendo que el turismo de naturaleza se desarrolla en espacios rurales, en muchas ocasiones de fragilidad ambiental o bajo categorías de protección, se hace necesario acompañar su desarrollo de acciones que ayuden a prevenir los impactos de la actividad, sobre el ambiente, la cultura y la misma economía de los territorios donde se practica, la siguiente tabla, menciona algunas de ellas, independientemente de la tipología de turismo de naturaleza desarrollado. 
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				//- ---------------- 
+				//- ---------------- Tables
+				//- ----------------
+				+tables-containers('Tabla 3. requerimientos adicionales del turismo de naturaleza')
+					+set('thead')
+						tr
+							th(colspan='2') Turismo de Naturaleza
+					+set('tr')
+						tr
+							td Turismo Rural
+							td(rowspan='3') 
+								ul
+									li Protocolos de observación de fauna
+									li Incorporar prácticas de sostenibilidad
+									li Implementar modalidades como el turismo Comunitario. 
+									li Realizar estudios de capacidad de carga
+									li Protocolos de conservación del recurso hídrico
+									li Diseño de productos turísticos experienciales 
+									li Estudios de impactos socioeconómico de la actividad
+
+						tr
+							td Turismo de aventura
+						tr
+							td Ecoturismo
+							
+
+				
+				
+
+				
+				h3 Bibliografía
+				
+				ul
+					li MinCIT. (2012). POLÍTICA DE TURISMO DE NATURALEZA. Bogotá.
+
+					li FONTUR. (29 de 02 de 2020). GLOSARIO DE TERMINOLOGÍA DE TURISMO. Obtenido de <a href="https://fontur.com.co/interactue/glosario/63" target="_blank">https://fontur.com.co/interactue/glosario/63</a>
+
+					li MinCIT. (2018). PLAN SECTORIAL DE TURISMO 2018-2022. Obtenido de <a href="http://www.mincit.gov.co/CMSPages/GetFile.aspx?guid=2ca4ebd7-1acd-44f9-9978-4c826bab5013" target="_blank">http://www.mincit.gov.co/CMSPages/GetFile.aspx?guid=2ca4ebd7-1acd-44f9-9978-4c826bab5013</a>
+
+					li OMT. (26 de 02 de 2020). GLOSARIO DE TÉRMINOS DE TURISMO. Obtenido de <a href="https://www.unwto.org/es/glosario-terminos-turisticos" target="_blank">https://www.unwto.org/es/glosario-terminos-turisticos</a>
+
+
+
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-1')
+				
+				//- progreso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=351046&chapterid=9795', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=351046&chapterid=9797', 'forward', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

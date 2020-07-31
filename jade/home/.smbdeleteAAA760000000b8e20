@@ -1,0 +1,33 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content & 1
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				//+menu
+				div#menu
+				
+				//- banner modulo 1
+				+banner
+			
+				p Bienvenidos al Diplomado Herramientas de Gestión del Turismo de Naturaleza Para Entidades Territoriales, para comenzar seleccione el tema a estudiar en el menú superior.
+	
+	//- footer section			
+	+footer
+
+	
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

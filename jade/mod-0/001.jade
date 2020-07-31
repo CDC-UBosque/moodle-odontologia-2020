@@ -1,0 +1,47 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				//+menu
+				div#menu
+			
+				//- banner modulo 1
+				+banner
+				
+				h1 Carta bienvenida
+			
+				p Actualmente la formación de profesionales en odontología cada vez más comprometidos con la sociedad en la que desarrollan su labor, requiere constante actualización en conocimientos y materias que van surgiendo del entorno mismo de la tecnología digital; la era 4.0, la conectividad y el acceso fácil a la información, han traído muchos cambios en el consumo de bienes y servicios para el área odontológica. En este contexto la facultad de odontología de la universidad El Bosque a través de su Centro Especializado de Integración Digital en Odontología (CEIDO) y junto con el apoyo del área de educación continuada con más de 10 años de experiencia en capacitaciones online, han desarrollado el primer DIPLOMADO EN ODONTOLOGÍA DIGITAL MODALIDAD B-LEARNING, para toda la comunidad odontológica de Colombia y Latinoamérica.
+				p Este modelo educacional enfoca su aprendizaje significativo en 3 aspectos fundamentales; Primero en el diseño y la planificación virtual como herramientas de apoyo básicas en el diagnóstico integral de un tratamiento dental digital. Segundo en el buen uso, manejo e interpretación de softwares que permiten trabajar con características de precisión, control y predicción para cada disciplina odontológica y tercero en la utilizando de impresión tridimensional y maquinado asistido por computador que vienen transformando radicalmente el flujo de trabajo convencional en odontología.
+				p De esta manera una vez finalizado el diplomado usted estará preparado para atender las nuevas exigencias y expectativas en tiempo y resultado que actualmente demandan los pacientes frente a este entorno digital y va a estar capacitado para implementar recursos CAD-CAM in-side o lab-side dentro de un plan de tratamiento dental propuesto para sus pacientes.
+				p Es para nosotros un placer darle la bienvenida y al mismo tiempo compartir nuestra felicidad por este gran logro de innovación educativa e invitarlo a disfrutar de este diplomado donde estaremos acompañándolo durante todo su proceso de formación.
+  
+				
+				h3 Dra. Maria R. Buenahora
+				p Decana Facultad Odontología
+				
+				h3 Dra. Maria del R. Bozón
+				p Directora Educación Continuada
+				
+				h3 Dr. Luis González C.
+				p Director del Diplomado
+						
+				
+				//- progreso y contador
+				+paginador('#', 'disabled', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=432334&chapterid=10550', 'next', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

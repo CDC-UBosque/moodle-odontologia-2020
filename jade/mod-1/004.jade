@@ -1,0 +1,121 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				//+menu
+				div#menu
+			
+				//- banner modulo 1
+				+banner
+				
+				h1 3.	Temas/estructura
+			
+				h3 3.2.	Conceptualización turística y tipologías
+				
+				p En Colombia según él (MinCIT, 2018), se identifican las siguientes tipologías prioritarias a nivel nacional, dadas las condiciones de megabiodiversidad del país y las ventajas competitivas del sector, sin olvidar que a nivel global existen otras tipologías identificadas.  
+
+				//- ---------------- 
+				//- ---------------- Tables
+				//- ----------------
+				+tables-containers('Tabla 1. Tipologías de turismo en Colombia')
+					+set('thead')
+						tr
+							th(colspan='3') Tipologías de turismo
+					+set('tr')
+						tr
+							td(rowspan='4') Turismo
+							td ✓	Turismo de reuniones
+							td “aquella actividad de viaje que se realiza fuera del entorno habitual de una persona, por al menos 24 horas y que cumple con los requisitos de lo que es una reunión.  El turismo de reuniones, comprende la captación y organización de congresos, convenciones, viajes de incentivos y eventos”
+						tr
+							td ✓	Turismo de Salud y Bienestar
+							td “comprende los viajes por tratamientos con énfasis en medicina preventiva, curativa, intervenciones médicas, odontológicas y estéticas”
+						tr
+							td ✓	Turismo de Naturaleza
+							td “comprende todo tipo de viajes enfocados en la naturaleza, en los que la principal motivación es la observación y apreciación de la biodiversidad, acompañada de la cultura de poblaciones locales”
+						tr
+							td ✓	Turismo Cultural
+							td “un tipo de actividad turística en la que la motivación esencial del visitante es aprender, descubrir, experimentar y consumir atractivos o productos culturales tangibles   e intangibles en un destino turístico”
+						tr
+							td(colspan='3') 
+								p.small Fuente: Tabla del autor a partir de MinCIT, 2018
+				
+				
+				p Una apuesta promovida en el turismo, y que debería ser incorporada sin importar la tipología es la adopción de criterios de sostenibilidad. A continuación, con los pilares de la sostenibilidad que aplican al turismo. 
+				
+				
+				//- ---------------- 
+				//- ---------------- Image / video + caption
+				//- ---------------- 		
+				+image-caption('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/turismo-territoriales/images/mod-1/005.jpg', 'example-1', 'https://ubosquemoodle.unbosque.edu.co/diseno/cursos/turismo-territoriales/images/mod-1/005.jpg', 'Texto para acompañar imagen')
+					span Gráfica 5. Pilares de la sostenibilidad del turismo. Fuente: (CIF, sf)
+
+
+				p Una vez reconocidas las tipologías de turismo que aplican para Colombia y los pilares de sostenibilidad que deben incorporar, es importante reconocer la naturaleza de la actividad turística, que para  (Buhalis, y otros, sf), es “es un conjunto de elementos interrelacionados entre sí que evolucionan dinámicamente” y menciona  cuatro elementos básicos 
+				
+				//- ---------------- 
+				//- ---------------- Tables
+				//- ----------------
+				+tables-containers('Tabla 2.')
+					+set('thead')
+						tr
+							th(colspan='2') Elementos básicos en el concepto de actividad turística, según (Buhalis, y otros, sf)
+					+set('tr')
+						tr
+							td 1. La demanda: formada por el conjunto de consumidores –o posibles consumidores– de bienes y servicios turísticos.
+							td 2. La oferta: compuesta por el conjunto de productos, servicios y organizaciones involucrados activamente en la experiencia turística.
+						tr
+							td 3. El espacio geográfico: base física donde tiene lugar la conjunción o encuentro entre la oferta y la demanda y en donde se sitúa la población residente, que, si bien no es en sí misma un elemento turístico, se considera un importante factor de cohesión o disgregación, según se la haya tenido en cuenta o no a la hora de planificar la actividad turística.
+							td 4. Los operadores del mercado: son aquellas empresas y organismos cuya función principal es facilitar la interrelación entre la oferta y la demanda. Entran en esta consideración las agencias de viajes, las compañías de transporte regular y aquellos organismos públicos y privados que, mediante su labor profesional, son artífices de la ordenación y/o promoción del turismo.
+
+
+				p Ahora, es importante identificar los aspectos que componen un producto turístico, entendido según (FONTUR, 2020), como “la combinación de atractivos y servicios que se ofrecen en el mercado con el fin de satisfacer las necesidades, requerimientos o deseos de los turistas”,
+				
+				
+				//- ---------------- 
+				//- ---------------- Image / video + caption
+				//- ---------------- 		
+				+image-caption('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/turismo-territoriales/images/mod-1/006.jpg', 'example-1', 'https://ubosquemoodle.unbosque.edu.co/diseno/cursos/turismo-territoriales/images/mod-1/006.jpg', 'Texto para acompañar imagen')
+					span Gráfica 7. Elementos del producto turístico. Fuente: (Sistema Nacional de Inversión Pública (SNIP) , sf)
+
+				
+				
+
+				
+				h3 Bibliografía
+				
+				ul
+					li MinCIT. (2018). PLAN SECTORIAL DE TURISMO 2018-2022. Obtenido de <a href="http://www.mincit.gov.co/CMSPages/GetFile.aspx?guid=2ca4ebd7-1acd-44f9-9978-4c826bab5013" target="_blank">http://www.mincit.gov.co/CMSPages/GetFile.aspx?guid=2ca4ebd7-1acd-44f9-9978-4c826bab5013</a>
+
+					li CIF. (sf). Curso de Turismo Sostenible y Desarrollo Local en Áreas Rurales. UNIDAD 1: El turismo como motor de desarrollo local sostenible. Centro Internacional de Formación.
+
+					li Buhalis, D., Gallego, J., Mata, J., Navarro, S., Osorio, E., Pedro, A., . . . Ruiz, P. (sf). Introducción al turismo. OMT.
+
+					li FONTUR. (29 de 02 de 2020). GLOSARIO DE TERMINOLOGÍA DE TURISMO. Obtenido de <a href="https://fontur.com.co/interactue/glosario/63" target="_blank">https://fontur.com.co/interactue/glosario/63</a>
+
+					li Sistema Nacional de Inversión Pública (SNIP) . (sf). GUÍA METODOLÓGICA PARA LA IDENTIFICACION, FORMULACION Y EVALUACION SOCIAL CASO: TURISMO. Lima.
+
+
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-1')
+				
+				//- progreso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=351046&chapterid=9794', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=351046&chapterid=9796', 'forward', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

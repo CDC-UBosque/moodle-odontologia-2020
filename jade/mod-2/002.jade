@@ -1,0 +1,55 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				//+menu
+				div#menu
+			
+				//- banner modulo 1
+				+banner
+				
+				h1 2. Propósitos/ objetivos de formación del módulo
+			
+				h3 Propósitos/ objetivos de formación del módulo:
+				
+				ul
+					li Reconocer el paisaje dentro de un contexto sistémico  
+					li Aplicar los conceptos biológicos en función del turismo 
+					li Reconocer la importancia del turismo dentro del as estrategias de conservación 
+					
+				h3 Competencias: 
+				
+				ul
+					li Reconoce el paisaje como una escala dentro de un sistema y global y entiende su importancia desde un contexto ecológico (funcionalidad y temporalidad) y calidad escénica (belleza paisajística)
+
+					li Incorpora los conceptos ecológicos asociados a la fauna y flora y la importancia de estos en las estrategias de conservación en el territorio.
+
+					li Aplica las herramientas de monitoreo y reconocimiento de paisaje, su salud ecosistémica y calidad escénica para determinarlo como recurso turístico 
+
+  
+				
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-2')
+				
+				//- progreso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=356255&chapterid=9909', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=356255&chapterid=9911', 'forward', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

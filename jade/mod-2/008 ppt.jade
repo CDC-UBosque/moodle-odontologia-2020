@@ -1,0 +1,35 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				//+menu
+				div#menu
+			
+				//- banner modulo
+				+banner
+				
+				h1 Presentación PPT Módulo 2 Biodiversidad y conservación en el turismo de naturaleza
+				+video('https://view.officeapps.live.com/op/embed.aspx?src=https://ubosquemoodle.unbosque.edu.co/diseno/cursos/turismo-territoriales/PDF/mod-2/Presentacion-Modulo-2.pptx')
+				
+				//- Material modulo
+				+material-modulo('material-mod-2')
+				
+				//- progreso y contador
+				+paginador-menu
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

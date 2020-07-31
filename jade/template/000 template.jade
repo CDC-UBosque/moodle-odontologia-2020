@@ -1,0 +1,110 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				//+menu
+				div#menu
+			
+				//- banner modulo 1
+				+banner
+				
+			
+				h1 Capítulo 1 / Título del capítulo
+				
+				p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round. Boudin andouille landjaeger, rump capicola jerky cupim ball tip. Meatball bacon tenderloin jowl prosciutto alcatra, tri-tip t-bone jerky shankle ball tip chuck cow fatback pastrami. Filet mignon t-bone buffalo pork loin meatloaf. Filet mignon bresaola swine prosciutto, leberkas turducken shankle flank pancetta buffalo chicken t-bone.
+				
+				//- ---------------- 
+				//- ---------------- Tabs
+				//- ---------------- 
+				+tabs-containers
+					+set('titles')
+						li.active: a(href='#1' data-toggle='tab') 1
+						li: a(href='#2' data-toggle='tab') 2
+						li: a(href='#3' data-toggle='tab') 3
+						li: a(href='#4' data-toggle='tab') 4
+						
+					+set('content')
+						div.tab-pane.fade.active.in#1
+							p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round.
+						div.tab-pane.fade#2
+							p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round.
+						div.tab-pane.fade#3
+							p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round.
+						div.tab-pane.fade#4
+							p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round.
+				
+												
+								
+							
+				//- ---------------- 
+				//- ---------------- Tables
+				//- ----------------
+				+tables-containers('caption')
+					+set('thead')
+						tr
+							th content 1
+							th content 2
+							th content 3
+					+set('tr')
+						tr
+							td content 1
+							td content 2
+							td content 3
+						tr
+							td content 1
+							td content 2
+							td content 3
+					
+				p.small Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison.
+				
+				
+				
+				//- ---------------- 
+				//- ---------------- Accordion
+				//- ---------------- 
+				+accordion('accordion1')
+					+accordion-item('#accordion1', '#box1', 'box1', 'Titulo')
+						p Yeah, but your scientists were so preoccupied with whether or not they could, they didn’t stop to think if they should. I was part of something special. You’re a very talented young man, with your own clever thoughts and ideas. Do you need a manager?
+					+accordion-item('#accordion1', '#box2', 'box2', 'Titulo')
+						p Yeah, but your scientists were so preoccupied with whether or not they could, they didn’t stop to think if they should. I was part of something special. You’re a very talented young man, with your own clever thoughts and ideas. Do you need a manager?
+					+accordion-item('#accordion1', '#box3', 'box3', 'Titulo')
+						p Yeah, but your scientists were so preoccupied with whether or not they could, they didn’t stop to think if they should. I was part of something special. You’re a very talented young man, with your own clever thoughts and ideas. Do you need a manager?
+						
+				
+				//- ---------------- 
+				//- ---------------- Image / video + caption
+				//- ---------------- 		
+				+image-caption('https://cdn2.geckoandfly.com/wp-content/uploads/2012/06/10.5.10.6-830x518.jpg#.XQ1SKt28bJQ.link', 'example-1', 'https://cdn2.geckoandfly.com/wp-content/uploads/2012/06/10.5.10.6-830x518.jpg#.XQ1SKt28bJQ.link', 'Texto para acompañar imagen')
+					span Yeah, but your scientists were so preoccupied with whether or not they could, they didn’t stop to think if they should. I was part of something special. You’re a very talented young man, with your own clever thoughts and ideas. Do you need a manager?
+					
+							
+							
+				//- texto resaltado
+				div.row-fluid
+					div.span10.resaltado-txt
+						p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round.
+						p.small Spicy jalapeno bacon ipsum dolor amet cow
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-1')
+				
+				//- progreso y contador
+				+paginador('#', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=303978&chapterid=9066', 'forward', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

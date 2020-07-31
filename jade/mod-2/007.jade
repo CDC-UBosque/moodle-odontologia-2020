@@ -1,0 +1,196 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				//+menu
+				div#menu
+			
+				//- banner modulo 1
+				+banner
+				
+				h1 3. Temas/estructura
+			
+				h3 Estrategias de conservación
+				
+				h4 Figuras de conservación en Colombia 
+				
+				p El SINAP tiene niveles de gestión: nacional, regional y local. Este último se ve reflejado en los Planes de Ordenamiento Territorial municipales como una de las determinantes ambientales del ordenamiento. El SINAP surge en Colombia como respuesta a los compromisos que adquiere el país al suscribir el convenio de Diversidad Biológica mediante la Ley 165 de 1994.
+
+				
+				//- ---------------- 
+				//- ---------------- Tables
+				//- ----------------
+				+tables-containers('Tabla 7. Áreas protegidas Nacionales, Regionales y privadas en Colombia')
+					+set('thead')
+						tr
+							th Ámbito  de Gestión
+							th Categoría de Manejo
+							th Nº de Áreas Protegidas por Categoría
+							th Hectáreas
+					+set('tr')
+						tr
+							td(rowspan='4') ÁREAS PROTEGIDAS  NACIONALES
+							td Reservas Forestales Protectoras Nacionales
+							td 59
+							td 562.381,67
+						tr
+							td Distritos Nacionales de Manejo Integrado
+							td 4
+							td 9.715.811,36
+						tr
+							td Áreas Protegidas del Sistema de Parques Nacionales Naturales – SPNN
+							td 59
+							td 17.466.973,55
+						tr
+							td Total Áreas Protegidas Nacionales
+							td 122
+							td 27.745.166,58
+						tr
+							td(rowspan='6') ÁREAS PROTEGIDAS  REGIONALES
+							td Áreas de recreación
+							td 10
+							td 792,90
+						tr
+							td Distritos de Conservación de  Suelos
+							td 15
+							td 72.914,96
+						tr
+							td Distritos Regionales de Manejo Integrado
+							td 101
+							td 2.314.006,49
+						tr
+							td Parques Naturales Regionales
+							td 58
+							td 751.668,57
+						tr
+							td Reservas Forestales Protectoras Regionales
+							td 96
+							td 215.230,86
+						tr
+							td Total Áreas Protegidas Regionales
+							td 280
+							td 3.354.613,78
+						tr
+							td(rowspan='2') ÁREAS PROTEGIDAS PRIVADAS
+							td Reservas Naturales de la Sociedad Civil – RNSC
+							td 796
+							td 160.399,00
+						tr
+							td Total RNSC:
+							td 796
+							td 160.399,00
+						tr
+							td(colspan='2') TOTALES
+							td 1.198
+							td 31.260.179
+						tr
+							td.small(colspan='4') Fuente: (SINAP,2020)
+				
+				
+				
+				h3 Otras figuras de conservación
+				h4 Valores objeto de conservación VOC
+				p Para establecer si el plan de manejo está funcionando, es decir, si la gestión del área protegida es efectiva, se selecciona una serie de “elementos” que nos permite a través de la evaluación de su estado, determinar si se están logrando o no los objetivos de conservación propuestos. Estos elementos seleccionados para evaluar el sistema, se denominan VALORES OBJETO DE CONSERVACIÓN o sencillamente VOC. (SINAP, 2020)
+				h4 Resguardo 
+				p Un Resguardo Indígena es una Institución legal y sociopolítica de carácter especial, conformada por una comunidad o parcialidad indígena, que, con un título de propiedad comunitaria, posee su territorio y se rige para el manejo de éste y de su vida interna, por una organización ajustada al fuero indígena o a sus pautas y tradiciones culturales (SIAT-AC,2020)
+				h4 AICA
+				p Es un estándar internacional que hace referencia a un ‘Área Importante para la Conservación de las Aves’. En Colombia y el mundo las AICA se identifican atendiendo criterios técnicos que consideran la presencia de especies de aves que son prioritarias para la conservación.
+				h4 Patrimonio natural
+				p Preservar la biodiversidad de nuestro planeta es fundamental para el bienestar de la humanidad. Gracias al apoyo de la Convención del Patrimonio Mundial, los sitios naturales más importantes gozan de reconocimiento internacional y de asistencia técnica y económica para combatir amenazas como la tala indiscriminada para hacer cultivos, la introducción de especies exóticas y la caza furtiva.
+
+				
+				h3 ¿Porque es importante conocer las figuras de conservación?
+				
+				p El hecho de contar con áreas protegidas dentro del territorio es una ventaja en función de turismo ya que estas cuentan con líneas estratégicas orientadas al turismo de naturaleza y dentro su planeación estratégica se encuentran los siguientes objetivos:
+				
+				//- ---------------- 
+				//- ---------------- Tabs
+				//- ---------------- 
+				+tabs-containers
+					+set('titles')
+						li.active: a(href='#1' data-toggle='tab') a
+						li: a(href='#2' data-toggle='tab') b
+						li: a(href='#3' data-toggle='tab') c
+						li: a(href='#4' data-toggle='tab') d
+						li: a(href='#5' data-toggle='tab') e
+						li: a(href='#6' data-toggle='tab') f
+						li: a(href='#7' data-toggle='tab') g
+						li: a(href='#8' data-toggle='tab') h
+						li: a(href='#9' data-toggle='tab') i
+						li: a(href='#10' data-toggle='tab') j
+						
+					+set('content')
+						div.tab-pane.fade.active.in#1
+							p Estrechar alianzas con entidades relacionadas con el sector turístico y el desarrollo regional
+						div.tab-pane.fade#2
+							p Reglamentar las actividades que puede realizar el visitante y los servicios ecoturísticos que ofrecen prestadores de servicios
+						div.tab-pane.fade#3
+							p Fortalecer el control de la capacidad de carga y monitorear los impactos a los ecosistemas
+						div.tab-pane.fade#4
+							p Implementar buenas prácticas en usuarios y prestadores de servicios
+						div.tab-pane.fade#5
+							p Diagnosticar las necesidades en mejoramiento de infraestructura relacionada con la prestación de servicio
+						div.tab-pane.fade#6
+							p Mejorar el diálogo con los visitantes y el sector turístico a través de la interpretación del patrimonio natural y cultural
+						div.tab-pane.fade#7
+							p Afianzar alianzas con comunidades locales para acordar la incorporación social en la prestación de los servicios ecoturísticos
+						div.tab-pane.fade#8
+							p Mejorar las habilidades técnicas en temas turísticos y ambientales del personal de Parques Nacionales Naturales y de los prestadores de servicios turísticos
+						div.tab-pane.fade#9
+							p Fortalecer el trabajo colaborativo entre autoridades ambientales para la comprensión, planificación y gestión del ecoturismo
+						div.tab-pane.fade#10
+							p Gestionar recursos técnicos y financieros con actores locales, regionales, nacionales e internacionales.
+
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+				
+				
+				p Por lo cual estas áreas se vuelvan aliados estratégicos para la gestión responsable y sostenible del turismo en el territorio.
+				
+				
+				
+				
+				
+				h3 Bibliografía de referencia 
+				
+				ul
+					li SIATA- AC. (2020) Sistema de información Ambiental Territorial de la Amazonia Colombiana. <a href="http://siatac.co/web/guest/productos" target="_blank">http://siatac.co/web/guest/productos</a> 
+					li SINAP. (2020). Sistema Nacional de Áreas Protegidas <a href="http://www.parquesnacionales.gov.co/portal/es/sistema-nacional-de-areas-protegidas-sinap/" target="_blank">http://www.parquesnacionales.gov.co/portal/es/sistema-nacional-de-areas-protegidas-sinap/</a>
+
+
+
+
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-2')
+				
+				//- progreso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=356255&chapterid=9914', 'back', 'Anterior', '#', 'disabled', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

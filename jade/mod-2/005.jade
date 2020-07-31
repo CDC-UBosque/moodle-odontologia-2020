@@ -1,0 +1,427 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				//+menu
+				div#menu
+			
+				//- banner modulo 1
+				+banner
+				
+				h1 3. Temas/estructura
+			
+				h3 Integridad biológica en matrices paisajísticas en función de turismo
+
+				p Por desconocimiento o falta de interés, en muchos casos se dejan de lado importantes recursos del paisaje que pueden contribuir al desarrollo de propuestas integrales de mayor calidad paisajística, como son la calidad ambiental y ecológica de los componentes naturales, el apego social hacia los elementos tangibles e intangibles de la historia y la evolución del uso del suelo, el arte y la música inspirados en el paisaje o el valor científico derivado de la relación naturaleza-sociedad (Picazo, 2012; Cebrián-Abellán, 2013 en García, et al, 2019).
+
+				p El uso de indicadores para evaluar la integridad biológica en la matriz paisajística o comúnmente conocido como la calidad del paisaje puede ser de gran utilidad, pues representan una importante herramienta de evaluación y monitoreo de diferentes realidades territoriales, facilitando la identificación de recursos, cualidades y problemáticas, especialmente útiles para su adecuada valoración y gestión (Bruni, 2016, en García, et al, 2019)
+				
+				//- ---------------- 
+				//- ---------------- Image / video + caption
+				//- ---------------- 		
+				+image-caption('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/turismo-territoriales/images/mod-2/004.jpg', 'example-1', 'https://ubosquemoodle.unbosque.edu.co/diseno/cursos/turismo-territoriales/images/mod-2/004.jpg', 'Texto para acompañar imagen')
+					span Gráfica 3. Integridad Biológica en matriz paisajística en función del turismo. Fuente: Elaboración propia 
+				
+				
+				p Lo que concierne el estudio y monitoreo del paisaje, se evalúa en dos componentes:
+				
+				
+				h3 1. EL COMPONENTE FENOSISTÉMICO:
+				
+				p Es aquel conjunto de características que agrupan todos los patrones visibles del paisaje, los cuales están compuestos ante todo por aspectos fisionómicos o estructurales externos y se compone de dos partes principales (Etter,2014)
+				
+				
+				//- ---------------- 
+				//- ---------------- Accordion
+				//- ---------------- 
+				+accordion('accordion1')
+					+accordion-item('#accordion1', '#box1', 'box1', 'La Geoforma')
+						p Se refiere a todos los aspectos que tienen que ver con la morfología de la superficie terrestre (Etter,2014) como lo son: 
+						
+						ul
+							li Relieve-volumen 
+							li Forma y longitud de pendientes 
+							li Tipo y densidad de disección del patrón de drenaje 
+
+					+accordion-item('#accordion1', '#box2', 'box2', 'La Cobertura')
+						p Se refiere a todos los aspectos que forman parte del recubrimiento de la superficie terrestre, ya sean de origen natural o cultural. Generalmente son de orígenes bióticos, o bien producidos por algún tipo de actividad biótica y/o antrópica (Etter,2014). Estos incluyen: 
+						ul
+							li Fisonomía y composición de la cobertura vegetal expresada por las formas de vida dominantes y sus formas de asociación. 
+							li Estratificación de biomasa 
+							li Coberturas naturales no bióticas (hielo, agua, rocas...) 
+							li Coberturas culturales (edificaciones, infraestructura...) 
+				
+				
+				p La magnitud espacial y el grado de homogeneidad de los elementos del paisaje en función del nivel de jerarquía específico de análisis, el cual depende primordialmente del nivel de detalle con que se esté observando un paisaje determinado. Existen diferentes herramientas de identificación y monitoreo de coberturas.
+  
+  
+				h4 Corine land cover 
+				
+				p CORINE: Coordinationof Information onthe Environment.
+				p Es una Base de datos sobre la cobertura y el uso del suelo en la Unión Europea a escala 1:100.000 con base en imágenes Landasty SPOT.Que No emplea clasificación supervisada sino fotointerpretación, con las siguientes características:
+				
+				ul
+					li Unidad de mapeo mínima: 25 ha.
+					li Unidad lineal mínima: 100 m.
+					li Unidad de mapeo mínima para cambios de cobertura: 5 ha.
+					
+				h4 Corine land cover adaptada a Colombia 
+				
+				ul
+					li Mapa de Coberturas de la Tierra de la Cuenca Magdalena-Cauca, escala 1:100.000: IDEAM, IGAC, Cormagdalena (2004-2007).
+					li Leyenda Nacional de Coberturas, escala 1:100.000: IDEAM, Sinchi, IAvHy UAESPNN (2010).
+					
+					
+				//- ---------------- 
+				//- ---------------- Tables
+				//- ----------------
+				+tables-containers('Leyenda nacional de coberturas de la tierra - Colombia')
+					+set('thead')
+						tr
+							th 1. Territorios artificializados
+							th 3. Bosques y Áreas seminaturales
+					+set('tr')
+						tr
+							td
+								ul
+									li 1.1. Zonas urbanizadas
+									ul
+										li 1.1.1. Tejido urbano continuo
+										li 1.1.2. Tejido urbano discontinuo
+									li 1.2. Zonas industriales o comerciantes y redes de comunicación
+									ul
+										li 1.2.1. Zonas industriales o comerciales
+										li 1.2.2. Red vial, ferroviaria y terrenos asociados
+										li 1.2.3. Zonas portuarias
+										li 1.2.4. Aeropuertos
+										li 1.2.5. Obras hidráulicas
+									li 1.3. Zonas de extracción minera y escombreras
+									ul
+										li 1.3.1. Zonas de extracción minera
+										li 1.3.2. Zonas de disposición de residuos
+									li 1.4. Zonas verdes artificializadas, no agrícolas
+									ul
+										li 1.4.1. Zonas verdes urbanas
+										li 1.4.2. Instalaciones recreativas
+									
+									
+									
+							td
+								ul
+									li 3.1. Bosques
+									ul
+										li 3.1.1. Bosque denso
+										ul 
+											li 3.1.1.1.1. Bosque denso alto de tierra firme
+											li 3.1.1.1.2. Bosque denso alto inundable
+											li 3.1.1.2.1. Bosque denso bajo de tierra firme
+											li 3.1.1.2.2. Bosque bajo inundable
+										li 3.1.2. Bosque abierto
+										ul
+											li 3.1.2.1.1. Bosque abierto alto de tierra firme
+											li 3.1.2.1.2. Bosque abierto alto inundable
+											li 3.1.2.2.1. Bosque abierto bajo de tierra firme
+											li 3.1.2.2.2. Bosque abierto bajo inundable
+										li 3.1.3. Bosque fragmentado
+										li 3.1.4. Bosque de galería y ripario
+										li 3.1.5. Plantación forestal
+									li 3.2. Áreas con vegetación herbácea y/o arbustiva
+									ul
+										li 3.2.1.1. Herbazal denso
+						tr
+							td.small(colspan='2') Gráfica 4. Sección de Leyenda Nacional de Coberturas, escala 1:100.000: Fuente: Metodología CORINE Land Cover Adaptada para Colombia, 2010 
+
+
+
+				h3 El Sistema Nacional de Información Forestal- SNIF 
+				
+				p Es el conjunto de procesos, metodologías, protocolos y herramientas para integrar y estandarizar la captura, almacenamiento, análisis, procesamiento, difusión, manejo, verificación y consulta de datos, bases de datos, estadísticas y material documental, con el fin de garantizar el flujo eficiente, oportuno y de calidad de la información forestal. (MADS-Decreto 1655 de 2017). Actualmente, el Sistema cuenta con información de productos forestales, maderables y no maderables en las temáticas de: Aprovechamientos, movilizaciones, decomisos, plantaciones productoras y protectoras, remisiones de madera de plantaciones comerciales o productoras e incendios de la cobertura vegetal (IDEAM, 2020)
+				
+				h3 Sistema de Monitoreo de las Coberturas de la tierra de la Amazonia colombiana –SIMCOBA
+				
+				p Con el SIMCOBA se genera información de las coberturas a partir de la interpretación de imágenes de sensores remotos; se actualiza cada dos años; los datos se distribuyen por: región, grandes paisajes, jurisdicción de Corporación, Estado legal del territorio, departamentos y municipios. Se presentan algunos mapas de coberturas de la tierra de la Amazonia Colombiana, obtenidos principalmente como resultado de aplicar la metodología Corine Land Cover ajustada a las condiciones de Colombia. (SIATA- AC, 2020)
+				
+				h3 Estructura de los paisajes (patrones espaciales)
+				
+				//- ---------------- 
+				//- ---------------- Accordion
+				//- ---------------- 
+				+accordion('accordion1')
+					+accordion-item('#accordion1', '#box3', 'box3', 'Parches ')
+						p Superficie no-lineal de tamaño variable que difiere fisionómicamente de sus alrededores, y que posee un grado de homogeneidad interno. Los Parches varían de acuerdo con su tamaño, forma, tipo, heterogeneidad y sus características de borde. Generalmente están inmersos en una matriz de características contrastantes en cuanto a fisonomía y composición (Etter,2014) 
+
+					+accordion-item('#accordion1', '#box4', 'box4', 'Corredores ')
+						p Segundo tipo de elemento estructural- funcional de un paisaje, definidos como una franja angosta y alargada, de forma y dirección variable que atraviesa una matriz y difiere de ella. Las propiedades generales de los corredores en un paisaje son de unir o bien separar elementos dentro de una matriz geográfica. En general muestran condiciones fisionómicas y de composición bien diferenciables de la matriz circundante (Etter,2014).
+						ol
+							li Corredores naturales: están directamente relacionados ya sea con redes de drenaje, con las vías de migración animal, o bien con condiciones particulares del sustrato por diferencias litológicas (fallas o contactos) o hidrológicas.
+							li Corredores culturales: están determinados principalmente por aspectos relacionados a la infraestructura y a las actividades de transporte o de límites de propiedad, o á reas de manejo.
+							
+					+accordion-item('#accordion1', '#box5', 'box5', 'Matriz ')
+						p De los tres elementos estructurales básicos que componen un paisaje, parches, corredores y matrices, este último es el más extenso y el más interconectado, adquiriendo así un papel dominante en el funcionamiento de un paisaje. Se define pues como matriz de un paisaje, aquel tipo de elemento del paisaje que ocupa la mayor área relativa (Etter,2014).
+						
+				
+				//- ---------------- 
+				//- ---------------- Tables
+				//- ----------------
+				+tables-containers('Tabla 4. Descripción de los elementos estructurales del paisaje  ')
+					+set('thead')
+						tr
+							th 
+							th Función
+							th Tipo de flujo
+							th Borders
+							th Propiedades
+					+set('tr')
+						tr
+							td Corredores
+							td 
+								ul
+									li Canales o líneas de flujo.
+									li Barrera.
+									li Filtro.
+									
+							td Masivo. <br/> Locomoción.
+							td Abrupto (gradual).
+							td Conectividad selectiva.
+						
+						tr
+							td Matriz
+							td 
+								ul
+									li Reservorio.
+									li Amortiguador.
+									li Disipador.
+									
+							td Difusión. <br/> Masivo.
+							td 
+							td Conectividad. Porosidad.
+							
+						tr
+							td Parches
+							td 
+								ul
+									li Concentrador.
+									li Reservorio.
+									
+							td Difusión. <br/> Locomoción.
+							td Gradual o abrupto.
+							td Aislador.
+					
+						tr
+							td.small(colspan='5') Fuente: (Etter,2014)
+
+				
+				h3 Estructura de los paisajes (valor escénico)
+				
+				p En las evaluaciones de la calidad escénica se trata de evaluar lo que percibe el observador, el efecto que la observación de un paisaje tiene sobre el individuo, y esto tiene una importante aplicación en la planificación. El valor escénico es uno de los aspectos que requiere mayor atención ya que se asocia la gestión integral del paisaje, considerando el recurso escénico en los procesos de ordenamiento territorial, planificación y la evaluación de impacto ambiental (García, et al, 2019).
+				p Se consideran, tanto el valor escénico del sitio, como el valor que resulta de la amplitud panorámica que permita las vistas a distancia, tanto en sitios puntuales como en trayectos longitudinales. (Kalivoda et al., 2014, en García, et al, 2019).
+				p El cual se puede evaluar según el criterio escénico 
+				
+				ul
+					li Valora el agrado perceptual que se tiene por la belleza del paisaje. 
+					li Cantidad y calidad de los componentes visuales del paisaje; el contraste entre las formas, colores y perspectiva que resultan del conjunto de ellos; así como 
+					li Existencia de componentes excepcionales de gran valor, como son los cuerpos de agua 
+
+
+				h3 2. COMPONENTE CRIPTOSISTÉMICO
+				
+				p Es el que corresponde a las características y procesos del paisaje que no son visibles subyacen a su expresión fenotípica, es decir, al componente fenosistémico. 
+
+				p Estas características se evalúan, en los ecosistemas, diferenciándolos a partir de las características relevantes para el análisis de la biodiversidad, siendo este uno de los aspectos centrales a ser tenidos en cuenta en el estudio de los ecosistemas, ya que, las características de heterogeneidad estructural y funcional de un paisaje tienen una relación directa con la diversidad de los espacios ecológicos (Etter,2014)
+
+				p Se puede evaluar la diversidad a diferentes escalas:
+				
+				//- ---------------- 
+				//- ---------------- Accordion
+				//- ---------------- 
+				+accordion('accordion1')
+					+accordion-item('#accordion1', '#box6', 'box6', 'Diversidad ecosistémica ')
+						p Diversidad de espacios - habitat en un determinado ecosistema o paisaje. Este nivel de diversidad tiene relación con la heterogeneidad de los factores geomorfo-climáticos de un área dada la cual conlleva a la diversidad de comunidades biológicas. 
+
+					+accordion-item('#accordion1', '#box7', 'box7', 'Diversidad biológica ')
+						p Diversidad de formas de vida y la diversidad de taxones que componen cada tipo de forma de vida en un ecosistema. Este nivel de biodiversidad es dependiente de la complejidad estructural de la cobertura vegetal y de la complejidad funcional de los niveles tróficos. 
+							
+					+accordion-item('#accordion1', '#box8', 'box8', 'Diversidad genética ')
+						p Variabilidad y cantidad de información genética de la población de una especie animal o vegetal. Depende del tamaño de la población y de sus núcleos de distribución. 
+						
+						
+				p Según los factores de diversidad se puede evaluar la salud ambiental desde el componente biótico del ecosistema, sin embargo, existen diferentes criterios (Tabla. 5) y procesos funcionales (Tabla. 6) para realizar la evaluación completa del escenario natural.
+				
+				
+				//- ---------------- 
+				//- ---------------- Tables
+				//- ----------------
+				+tables-containers('Tabla 4. Procesos ecosistémicos ')
+					+set('thead')
+						tr
+							th Procesos / Dimensión de acción
+							th Ejemplos
+					+set('tr')
+						tr
+							td Geomorfolización
+							td Meteorización, erosión, sedimentación…
+						tr
+							td Climáticos
+							td Precipitación, evaporación, transporte, eólico…
+						tr
+							td Hidrológicos
+							td Drenaje, interno y externo, inundaciones…
+						tr
+							td Pedológicos
+							td Lixiviación, descomposición, acumulación…
+						tr
+							td Bióticos
+							td Migraciones, acumulaciones, (*) animales…
+						tr
+							td Culturales
+							td Mecanización, conservación, deforestación
+						
+						tr
+							td.small(colspan='2') Fuente: (Etter,2014)
+
+				
+				
+				
+				
+				h3 Diseño y aplicación de indicadores para evaluar la calidad paisajística para los atractivos turísticos
+
+				p Diferentes trabajos han demostrado la utilidad del uso de indicadores ante algunos problemas del sistema turístico, como es el caso de la homogenización de los destinos, la idealización de determinados atractivos sin atender a la legitimidad y calidad de los recursos (Lea¬der-Elliott, 2005)
+				p Aunque de manera general los criterios tienen cierto grado de analogía con los propuestos por diversos au¬tores, algunos siguen esquemas más estructurados, de tal forma que la consideración del conjunto de criterios e indicadores permite una evaluación integral del potencial del paisaje como recurso para el turismo (Muñoz-Pedreros, 2004, en García, et al, 2019)
+	
+				p Para la formulación de los indicadores de calidad paisajística de los atractivos se propone la adaptación del modelo conceptual de G. Bertrand (Bertrand & Bertrand, 2006) según el cual, la calidad de un atractivo turístico reside en distintos recursos que pertenecen a tres componentes fundamentales del paisaje: geomorfológico, biótico y cultural. Para evaluar la calidad de estos recursos proponemos el uso de un conjunto de indicadores, relativos a tres cri¬terios:
+				
+				
+				ul
+					li Escénico
+					li Funcional 
+					li Interpretativo 
+
+				p Donde cada uno de ellos responde a un aspecto de relevancia en la valoración de los atractivos turísticos.
+				
+				
+				//- ---------------- 
+				//- ---------------- Accordion
+				//- ---------------- 
+				+accordion('accordion1')
+					+accordion-item('#accordion1', '#box9', 'box9', 'Criterio escénico ')
+						p Valora el agrado perceptual que se tiene por la belleza del paisaje. Interesa la cantidad y calidad de los componentes visuales del paisaje; el contraste entre las formas, colores y perspectiva que resultan del conjunto de ellos; así como la existencia de componentes excepcionales de gran valor, como son los cuerpos de agua (Kalivoda et al., 2014, en García, et al, 2019). 
+
+					+accordion-item('#accordion1', '#box10', 'box10', 'Criterio funcional')
+						p Valora la estabilidad geomorfológica, el grado de con¬servación de los componentes bióticos y la historia, productividad, sustentabilidad, accesibilidad y equipamiento asociados a los componentes culturales del paisaje (Nogué et al., 2009 en García, et al, 2019). Se considera además la importancia del patrimonio material (infraestructura) e inmaterial (espiritual e histórico-cultural) asociado al sitio, así como la origi¬nalidad y relevancia de la relación entre los componentes del paisaje y la importancia de alguno de ellos para el resguardo y protección de los otros.
+							
+					+accordion-item('#accordion1', '#box11', 'box11', 'Criterio interpretativo')
+						p Se enfoca en las características didácticas y de ejem¬plaridad del sitio, como exponente de la singularidad y representatividad de alguno de los com¬ponentes del paisaje, y de su importancia para facilitar explicaciones didácticas y despertar el interés por estudios académicos para la comprensión del paisaje (Reynard et al., 2007 en García, et al, 2019). 
+						
+						
+						
+				//- ---------------- 
+				//- ---------------- Tables
+				//- ----------------
+				+tables-containers('Tabla 5. Descripción de criterios para la valoración de la calidad paisajística')
+					+set('thead')
+						tr
+							th(rowspan='2') Criterios de valoración
+							th(colspan='3') Indicadores de calidad por componente del paisaje
+						tr
+							th Biótico
+							th Geomorfológico
+							th Cultural
+					+set('tr')
+						tr
+							td Escénico
+							td Tipo de vegetación
+							td Calidad escénica intrínseca.<br/>Desnivel topográfico <br/>Presencia de cuerpos de agua.<br/>Amplitud panorámica.<br/>
+								Variedad paisajística panorámica.<br/>Longitud del tramo con panorámicas.
+							td Calidad escénica de la superficia cultivada.<br/>Calidad escénica del asentamiento humano.
+						tr
+							td Funcional
+							td Estado de conservación.<br/>Cercanía a áreas naturales protegidas.<br/>Servicios ambientales.<br/>td Integridad.<br/>Asociación con la conservación del ecosistema.<br/>Asociación con rasgos culturales de valor paisajístico.
+							td Integridad.<br/> Asociación con la conservación del ecosistema. <br/> Asociación con rasgos culturales de valor paisajístico.
+							td Trascendencia religiosa o mística.<br/>Trascendencia histórica. <br/>Trascendencia artística y cultural.<br/>Productos económicos. <br/>Nivel de alcance del atractivo. <br/>Equipamiento.<br/>Tipo de acceso.<br/>Distancia al sitio.
+						tr
+							td Interpretativo
+							td Representativo. <br/>Singularidad.
+							td Representativo. <br/>Singularidad.
+							td Representativo. <br/>Singularidad.
+						
+						tr
+							td.small(colspan='4') Fuente: (García, et al, 2019)
+						
+						
+						
+				p Otro componente importante para definir el paisaje como un recurso turístico es la percepción social, en primera medida de la comunidad ya que estos son los directamente implicados en el desarrollo de este, y de ellos depende la aplicación de prácticas sostenibles y comunitarias en el territorio. Por lo tanto, es necesario conocer tres puntos claves:
+				
+				
+				//- ---------------- 
+				//- ---------------- Tabs
+				//- ---------------- 
+				+tabs-containers
+					+set('titles')
+						li.active: a(href='#1' data-toggle='tab') a
+						li: a(href='#2' data-toggle='tab') b
+						li: a(href='#3' data-toggle='tab') c
+						
+					+set('content')
+						div.tab-pane.fade.active.in#1
+							p <b>Percepción local del turismo</b>
+							p Imagen percibida por los actores locales sobre la localidad y su gente, el turismo y los turistas, la gestión local y su participación
+						div.tab-pane.fade#2
+							p <b>Interés y disposición por participar</b>
+							p Actitudes participativas, creativas e innovadoras de los distintos actores sociales, y de la cultura local en su conjunto
+
+						div.tab-pane.fade#3
+							p <b>Nivel de organización de la comunidad</b>
+ 
+							p Grado de integración y organización de la comunidad con capacidad de convocar y movilizar a los diferentes actores sociales y capacidad de la comunidad para enfrentar desafíos diversos.
+
+				p Grado de integración y organización de la comunidad con capacidad de convocar y movilizar a los diferentes actores sociales y capacidad de la comunidad para enfrentar desafíos diversos.
+
+				p En cuanto a las entidades gubernamentales es clave evaluar el conocimiento que tiene sobre el territorio para que las actividades que quieran ejercer estén en marco de los planes de ordenamiento, zonificación ambiental, etc. Este punto se abarcará a profundidad en los moduls de ordenamiento y gestión.
+
+				p En cuanto a demás atores de la cadena de turismo tanto empresas privadas como turistas la percepción del paisaje es el objeto del componente fenosistemico de estructura de los paisajes (valor escénico).
+
+  
+  
+  
+  
+				h3 Bibliografía de referencia 
+				
+				ul
+					li Etter. A, (2014) INTRODUCCIÓN A LA ECOLOGÍA DEL PAISAJE: Un Marco de Integración para los Levantamientos Ecológicos. Pontificia Universidad Javeriana
+
+					li García. A, Serrano. M, Olmo, Méndez. A, Salinas. E. (2019). Diseño y aplicación de indicadores de calidad paisajística para la evaluación de atractivos turísticos en áreas rurales.  Revista de Geografía Norte Grande.
+
+					li SIATA- AC. (2020) Sistema de información Ambiental Territorial de la Amazonia Colombiana. <a href="http://siatac.co/web/guest/productos" target="_blank">http://siatac.co/web/guest/productos</a> 
+
+					li IDEAM, 2010. Leyenda Nacional de Coberturas de la Tierra. Metodología CORINE Land Cover adaptada para Colombia Escala 1:100.000. Instituto de Hidrología, Meteorología y Estudios Ambientales. Bogotá, D. C. MADS-Decreto 1655 de 2017.  del Ministerio de Ambiente y Desarrollo Sostenible
+					
+					li SINAP. (2020). Sistema Nacional de Áreas Protegidas <a href="http://www.parquesnacionales.gov.co/portal/es/sistema-nacional-de-areas-protegidas-sinap/" target="_blank">http://www.parquesnacionales.gov.co/portal/es/sistema-nacional-de-areas-protegidas-sinap/</a>
+
+					li SMBYC. (2020). Sistema de monitoreo de bosques y carbono <a href="http://smbyc.ideam.gov.co/MonitoreoBC-WEB/reg/indexLogOn.jsp" target="_blank">http://smbyc.ideam.gov.co/MonitoreoBC-WEB/reg/indexLogOn.jsp</a>
+
+
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-2')
+				
+				//- progreso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=356255&chapterid=9912', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=356255&chapterid=9914', 'forward', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

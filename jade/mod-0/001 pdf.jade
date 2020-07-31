@@ -1,0 +1,46 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				//+menu
+				div#menu
+			
+				//- banner modulo 1
+				+banner
+				
+				h1 Sources of Systematic Error or Bias: Information Bias
+					
+				+video('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-investigacion-clinica-amgen/pdf/mod-1/Sources-of-Systematic-Error-o-Bias--nciph-ERIC14.pdf')
+  
+				
+				
+						
+				
+				//- progreso y contador
+				+paginador('#', 'disabled', Anterior, linkadelante, class2, Siguiente)
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			
+
+
+
+
+
+
+
+
+			

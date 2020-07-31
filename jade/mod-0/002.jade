@@ -1,0 +1,135 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				//+menu
+				div#menu
+			
+				//- banner modulo 1
+				+banner
+				
+				h1 Modalidad del diplomado
+			
+				p <b>Semipresencial (B-Learning).</b> Aprendizaje que combina lo virtual (1°parte) con lo presencial (2° parte), utilizando elementos nuevos de tecnología y comunicación.
+				
+				//- ---------------- 
+				//- ---------------- Tabs
+				//- ---------------- 
+				+tabs-containers
+					+set('titles')
+						li.active: a(href='#1' data-toggle='tab') 1° parte Online Work
+						li: a(href='#2' data-toggle='tab') 2° parte Hands On Work
+						
+					+set('content')
+						div.tab-pane.fade.active.in#1
+							p 1° parte Online Work (virtual, obligatorio con costo específico):
+							p Se desarrolla todo el aprendizaje teórico del diplomado a través de la plataforma virtual de la universidad El Bosque.
+						div.tab-pane.fade#2
+							p 2° parte Hands On Work (presencial, opcional con costo específico):
+							p Se desarrolla todo el aprendizaje práctico del diplomado en el nuevo Centro Especializado de Integración Digital para Odontología (CEIDO) que tiene la universidad El Bosque con cupo límite para 6 personas por turno, manteniendo el distanciamiento social obligatorio en contexto con la pandemia COVID-19.
+							
+				
+				div.download
+					a(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-odontologia-2020/pdf/mod/programa-DIPLOMADO-EN-ODONTOLOGIA-DIGITAL.pdf' target='_blank' download) Descargar programa del diplomado
+				
+				
+				h3 Reglas de juego
+				
+				p Para la 1° parte (Online Work) Son 5 (cinco) módulos; se inicia con el módulo 0 (introductorio) donde el estudiante podrá encontrar información general pertinente al diplomado y los otros módulos 1,2,3 y 4 ejecutables referentes al contenido específico para desarrollar de la siguiente manera:
+				
+				
+				//- ---------------- 
+				//- ---------------- Accordion
+				//- ---------------- 
+				+accordion('accordion1')
+					+accordion-item('#accordion1', '#box1', 'box1', 'MÓDULO 1 “La era digital en odontología”')
+						ul
+							li Introducción al contexto industria 4.0
+							li Historia del CAD-CAM; diseño y manufactura  El work-flow digital en odontología.
+							li Planificación Diseño de Sonrisa Digital 3D.
+					+accordion-item('#accordion1', '#box2', 'box2', 'MÓDULO 2 “Imagenología 3D”')
+						ul
+							li Planificación digital en implantología; cirugía guiada.
+							li Diagnóstico tomográfico en endodoncia; protocolos de captura e interpretación.
+							li Evaluación imagenológica digital de la ATM.
+							li Evolución de la tomografía en ortodoncia; craneometría.
+					+accordion-item('#accordion1', '#box3', 'box3', 'MÓDULO 3 “Rehabilitación oral CAD-CAM”')
+						ul
+							li Introducción a sistemas maquinados.
+							li Materiales para CAD-CAM.
+							li Escaneo, diseño y maquinado de restauraciones monolíticas. 
+							li Caracterización, terminación restauraciones CAD-CAM.
+					+accordion-item('#accordion1', '#box4', 'box4', 'MÓDULO 4 “Planificación quirúrgica digital”')
+						ul
+							li Anatomía digital.
+							li Estado del arte; cirugía guiada computarizada.
+							li Discrepancia realidad 2D vs virtualidad en la planificación quirúrgica 3D.  Utilización impresión 3D en cirugía maxilo facial.
+				
+				
+				p Cada módulo tendrá las siguientes actividades sincrónicas y asincrónicas en la plataforma virtual con su respectivo valor en porcentaje:
+				
+				
+				//- ---------------- 
+				//- ---------------- Tabs
+				//- ---------------- 
+				+tabs-containers
+					+set('titles')
+						li.active: a(href='#3' data-toggle='tab') Video
+						li: a(href='#4' data-toggle='tab') Foro virtual
+						li: a(href='#5' data-toggle='tab') Ensayo tema libre
+						li: a(href='#6' data-toggle='tab') Ejercicio caso clínico estructurado (ECCE)
+						li: a(href='#7' data-toggle='tab') Webconference
+						li: a(href='#8' data-toggle='tab') Evaluación final
+						
+					+set('content')
+						div.tab-pane.fade.active.in#3
+							p De bienvenida y presentación del módulo por parte del tutor, (actividad sincrónica).
+						div.tab-pane.fade#4
+							p Consiste en un espacio de aprendizaje colectivo a partir de las interacciones e intercambios basados en evidencia científica por parte de todos los participantes alrededor de un tema específico propuesto por el tutor, (actividad sincrónica). <b><u>VALE UN 10%</u></b>
+						div.tab-pane.fade#5
+							p Consiste en realizar y entregar a través de la plataforma virtual un escrito académico máximo de 3 hojas en formato PDF siguiendo las pautas de elaboración para un ensayo, utilizando y referenciando las lecturas de contenidos académicos sugeridos por el tutor, (actividad asincrónica). <b><u>VALE UN 10%</u></b>
+						div.tab-pane.fade#6
+							p Consiste en el desarrollo de un caso clínico hipotético dentro del flujo de trabajo digital relacionado con el ELABORADO POR: Dr. Luis Alberto González Camacho. DIPLOMADO EN ODONTOLOGÍA DIGITAL 2020-2 UNIVERSIDAD EL BOSQUE contenido del módulo que debe ser entregado en formato PDF por el estudiante a través de la plataforma virtual, (actividad asincrónica).<b><u>VALE UN 30%</u></b>
+						div.tab-pane.fade#7
+							p Se desarrolla en tiempo real y está a cargo del tutor, duración 1 hora; espacio propicio para aclarar dudas y responder inquietudes en relación al contenido del módulo, (actividad sincrónica).
+						div.tab-pane.fade#8
+							p Consiste en 10 preguntas que el estudiante debe contestar en relación a todos los contenidos vistos en el módulo (actividad sincrónica). <b><u>VALE UN 50%</u></b>
+				
+				
+				
+				p NOTA: Al finalizar cada módulo se realiza la sumatoria de la calificación individual de cada actividad según su valor en porcentaje para obtener la calificación final del módulo.
+				
+				
+				p Cada módulo debe ser <b><u>SUPERADO CON UNA CALIFICACIÓN MAYOR A 4.0</u></b> para poder continuar con el siguiente módulo.
+				
+				p Para la 2° parte (Hands On Work) se realiza la inscripción correspondiente contactando via e-mail o por teléfono al área de educación continuada, una vez el estudiante haya finalizado satisfactoriamente la 1° parte (Online Work) del diplomado.
+				
+				
+				
+				div.download
+					a(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-odontologia-2020/pdf/mod/Rubrica-de-evaluacion.pdf' target='_blank' download) Descargar rúbrica de evaluación para cada módulo desgún las actividades descritas anteriormente
+				
+				div.download
+					a(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-odontologia-2020/pdf/mod/Cronograma-DESARROLLO-version-02-06-2020.pdf' target='_blank' download) Descargar cronograma desarrollo del diplomado
+				
+				
+				
+				//- progreso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=432334&chapterid=10549', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=432334&chapterid=10551', 'next', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

@@ -1,0 +1,66 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				//+menu
+				div#menu
+			
+				//- banner modulo 1
+				+banner
+				
+				h1 4. Plan de evaluación del modelo
+				
+				
+				
+				
+				//- ---------------- 
+				//- ---------------- Tables
+				//- ----------------
+				+tables-containers('')
+					+set('thead')
+						tr
+							th(colspan='2') Actividades a desarrollar 
+					+set('tr')
+						tr
+							td(rowspan='4') Productos a entregar
+							td Individuales:
+
+						tr
+							td Validación de conocimientos previos <br/>Validación de conocimientos adquiridos 
+
+						tr
+							td Colaborativos:
+							
+						tr
+							td En la salida (foro)
+							
+
+				
+				
+
+				
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-1')
+				
+				//- progreso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=351046&chapterid=9796', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=351046&chapterid=9797', 'disabled', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

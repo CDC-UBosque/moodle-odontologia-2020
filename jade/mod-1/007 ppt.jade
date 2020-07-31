@@ -1,0 +1,35 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				//+menu
+				div#menu
+			
+				//- banner modulo 1
+				+banner
+				
+				h1 Presentación PPT Módulo 1 Introducción y conceptualización
+				+video('https://view.officeapps.live.com/op/embed.aspx?src=https://ubosquemoodle.unbosque.edu.co/diseno/cursos/turismo-territoriales/PDF/mod-1/Presentacion-Modulo-1.pptx')
+				
+				//- Material modulo
+				+material-modulo('material-mod-1')
+				
+				//- progreso y contador
+				+paginador-menu
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

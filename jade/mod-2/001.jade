@@ -1,0 +1,49 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				//+menu
+				div#menu
+			
+				//- banner modulo 1
+				+banner
+				
+				h1 Presentación del Módulo
+			
+				h2 Módulo 2 / Biodiversidad y conversación en el turismo de naturaleza
+				
+				p Tutor/docente: Daniela Dueñas Santafé 
+				
+				p Fecha inicio: / Fecha de Finalización: 
+				
+
+				p El módulo direcciona al estudiante a conocer el estudio de la ecología del paisaje en un contexto biológico y aplicable desde los fundamentos de la teoría general de sistemas, jerarquización e integración. La importancia del rol ecológico de las especies de fauna y flora para la integridad biológica dentro de un paisaje. La inclusión del paisaje cultural dentro del turismo de naturaleza y el turismo como parte de las estrategias de conservación.
+
+				p El módulo se encuentra estructurado en cinco momentos; inicialmente, el estudio de la ecología del paisaje desde las diferentes escalas de organización y conceptualización general, la segunda parte está enmarcada en la importancia del reconocimiento de la fauna y flora del territorio, así como sus características ecológicas y como estas pueden ser herramientas para las estrategias de conservación. La tercera parte, la integridad biológica del paisaje en función del turismo y las herramientas de monitoreo y reconocimiento del paisaje, seguido de la inclusión del paisaje cultural dentro del turismo de naturaleza y se finaliza con las estrategias de conservación incluyendo el turismo como una de estas.
+  
+				
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-2')
+				
+				//- progreso y contador
+				+paginador('#', 'disabled', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=356255&chapterid=9910', 'forward', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

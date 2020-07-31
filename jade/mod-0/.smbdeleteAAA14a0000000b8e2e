@@ -1,0 +1,42 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				//+menu
+				div#menu
+			
+				//- banner modulo 1
+				+banner
+				
+				h1 Carta bienvenida
+			
+				p "La Universidad El Bosque a través del Programa de Biología de la Facultad de Ciencias le da la bienvenida a al Diplomado Herramientas de gestión del turismo de naturaleza para entidades territoriales.
+				p Para nosotros es un privilegio contar con el interés de participantes de las diferentes regiones del país que actualmente vienen trabajando en el sector turismo como una de las actividades más importantes en la economía nacional en la actualidad. Para el programa de biología es claro, que la riqueza natural y cultural son el activo principal para potenciar el desarrollo socioeconómico en las regiones. No obstante, el deterioro los recursos naturales y culturales avanza de una forma acelerada, por lo que urge abordar desde un enfoque de sostenibilidad y responsabilidad la oportunidad del turismo en diferentes ecosistemas y escenarios naturales.
+				p La biodiversidad y diferentes ecosistemas de Colombia permite pensar en un aprovechamiento del turismo de naturaleza como uno posibilidad para el desarrollo socioeconómico y conservación de los diferentes territorios que gozan de escenarios con alta belleza escénica e importancia histórico.
+				p El diplomado le permitirá facilitar conceptos, herramientas, lineamientos para la planificación, ordenamiento y la gestión de destinos basado en la naturaleza, donde servidores públicos y profesionales afines podrán desarrollar estrategias, políticas, planes y programas de innovación para el sector, así como la asesoría a emprendimientos y diferentes prestadores de servicios turísticos. 
+				p Reconocemos el esfuerzo de participar en este importante diplomado y ofreceremos el mejor talento humano y las facilidades metodológicas, tecnológicas y locativas para que esta experiencia sea de gran valor para ampliar su conocimiento, las relaciones interpersonales y de gran aplicación y replica en el territorio en que se desenvuelve. 
+				p El diplomado se desarrollará mediante el abordaje de conceptos, casos de estudio y evaluación, además del acompañamiento de los expertos del curso en el desarrollo de un producto que permita concretar la aplicación de los conceptos vistos en su territorio.
+  
+				
+				
+						
+				
+				//- progreso y contador
+				+paginador-menu
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

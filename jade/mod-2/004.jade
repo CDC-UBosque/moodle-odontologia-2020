@@ -1,0 +1,252 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				//+menu
+				div#menu
+			
+				//- banner modulo 1
+				+banner
+				
+				h1 3. Temas/estructura
+			
+				h3 Especies de Fauna y Flora 
+				
+				h4 BIODIVERSIDAD 
+
+				p La biodiversidad es un componente fundamental de los ecosistemas, ya que de esta depende su integridad y funcionamiento. Colombia es un país reconocido mundialmente por ser un país megadiverso, especialmente debido a su privilegiada posición geográfica. Ocupamos el primer lugar en aves, con 1889 especies reconocidas, del total de las especies identificadas en el mundo, ocupamos el segundo lugar en anfibios (763 especies) y el tercero en reptiles (571 especies). Se ha comprobado también la presencia de 479 especies de mamíferos, que nos dejan en el cuarto lugar a escala global y cuenta con más de 24,500 especies de plantas vasculares, ocupando el segundo lugar de los países con mayor diversidad de plantas del planeta seguido de Brasil. (SIB,2019)
+
+				h4 ESPECIES PARA LA GESTIÓN 
+
+				p A pesar de que cada organismo juega un papel determínate en el ecosistema existen diferentes especies que se pueden catalogar como especies para la gestión ya que poseen ciertos atributos diferenciales. Se conocen como especies sucedáneas (del inglés surrogate species), las cuales han sido empleadas para reconocer cambios ambientales o poblacionales, que pueden llegar a llamar la atención de entidades públicas, privadas o de la comunidad en general lo que permite desarrollar programas y estrategias entorno a su ecología que garanticen la integridad de su entorno y demás especies asociadas a este. Se conocen diferentes tipos de especies sucedáneas como: 
+				
+				
+				//- ---------------- 
+				//- ---------------- Accordion
+				//- ---------------- 
+				+accordion('accordion1')
+					+accordion-item('#accordion1', '#box1', 'box1', 'Especies claves')
+						p Inicialmente se consideraban como especies clave, aquellas cuya actividad genera un efecto sobre otras especies de la comunidad que excede considerablemente el esperado según su biomasa o abundancia (Carignan y Villard, 2002, en Isasi. C, 2011). Este concepto, propuesto por Paine, estaba basado principalmente en las relaciones tróficas y en la regulación que algunos componentes ejercen sobre otros, hoy el concepto se ha extendido, considerándose también aquellas que afectan no sólo a otras especies, sino a la estructura y función del sistema natural (Payton et al.,2002).
+						p Es por ello que los atributos que caracterizan a las especies clave dependen principalmente de la función que cumplen dentro del ecosistema (Payton et al., 2002, en Isasi. C, 2011). 
+						p Para que una especie clave tenga funciones de sucedánea debe poseer como atributos adicionales:
+						ul
+							li Ser sensibles a las perturbaciones ambientales,
+							li Que esta sensibilidad esté dada por una respuesta estable de las especies ante la perturbación.
+							li Tiempo de permanencia largo 
+						
+					+accordion-item('#accordion1', '#box2', 'box2', 'Sombrilla')
+						p Son especies que por lo general requieren de un área de vida de gran extensión para el mantenimiento de poblaciones mínimas viables, por lo tanto, garantizar la conservación de sus poblaciones, implica directamente la protección de otras especies de su mismo gremio o hábitat (Caro et al., 2004, en Isasi. C, 2011). Las especies sombrilla han sido ampliamente utilizadas para la selección y diseño de áreas protegidas (Hitt y Frissell, 2004, en Isasi. C, 2011), las cuales suelen ser áreas muy grandes para garantizar la viabilidad de las poblaciones. Otro uso muy importante de estas especies es el establecimiento de corredores ecológicos para interconectar áreas naturales aisladas entre sí, según la distribución y áreas de vida de la especie (Angelstam, 2004, en Isasi. C, 2011).
+
+						p Las características de una especie para ser considerada como sombrilla son:
+						
+						ul
+							li Áreas de acción grande
+							li Tiempo de persistencia largo y
+							li Generalista de hábitat  
+							li Ser sensibles a las perturbaciones humanas
+							
+						p En general, estas características las cumplen las especies de gran tamaño corporal y largo tiempo generacional, como por ejemplo las aves (Ozaki et al., 2006, en Isasi. C, 2011) y grandes mamíferos, en particular los carnívoros (Dalerum et al., 2008), o especies migratorias (Caro, 2003, en Isasi. C, 2011).
+						
+						
+						
+						
+						
+					+accordion-item('#accordion1', '#box3', 'box3', 'Indicadoras')
+						p Son aquellas que por características como:
+						ul
+							li Sensibilidad 
+							li Perturbación o contaminantes
+							li Distribución
+							li Abundancia 
+							li Dispersión
+							li Éxito reproductivo
+							
+						p Son utilizadas como estimadoras de los atributos o estatus de otras especies o condiciones ambientales de interés (Caro y O´Doherty, 1999; Fleishman et al., 2001, en Isasi. C, 2011)
+
+						p Se clasifican según su uso:
+
+						p Las especies indicadoras de cambios ambientales: Han sido definidas como aquellas que se encuentran altamente relacionadas con condiciones ambientales particulares, por lo que su presencia señala la existencia de dicha condición (Patton, 1987, en Isasi. C, 2011). Inicialmente fueron utilizadas para evaluar la presencia de contaminantes o sustancias tóxicas en el ambiente. 
+						p Las características más importantes que debe tener una especie indicadora de cambios ambientales son (Caro y O´Doherty, 1999, en Isasi. C, 2011):
+						
+						ul
+							li Biología bien documentada
+							li Fácil e estudiar
+							li Sensible a las perturbaciones humanas (tanto negativa como positivamente)
+							li Ampliamente distribuida
+							li Poco longevas 
+							
+						p Las especies indicadoras poblacionales: Son aquellas que permiten estimar las variaciones poblacionales de otras especies con las que coexiste, gracias a sus propias variaciones producto de perturbaciones ambientales (O´Doherty,1999, en Isasi. C, 2011). Han sido ampliamente utilizadas en la evaluación de especies pertenecientes a un mismo gremio o grupo funcional, o especies relacionadas por algún factor, como la relación depredador-presas (Dalerum et al., 2008, en Isasi. C, 2011), bajo el supuesto de que los hábitats de estas se encuentran altamente solapados. Las características que deben tener estas especies indicadoras poblacionales son similares a las de especies indicadoras de cambios ambientales.
+						p Las especies indicadoras de biodiversidad: Son aquellas cuyos patrones de distribución están relacionados con áreas de alta riqueza de especies (Thomson et al., 2005, en Isasi. C, 2011), por lo que se les considera como un estimador del número de especies o taxones con las que se halla en simpatría (Caro y O´Doherty, 1999, en Isasi. C, 2011). Las características de estas especies indicadoras son principalmente:
+						
+						ul
+							li Amplia distribución, 
+							li Hábitat especialista, 
+							li Estar bien documentadas 
+							li Fáciles de estudiar 
+						
+						
+						
+						
+					+accordion-item('#accordion1', '#box4', 'box4', 'Banderas o carismáticas ')
+						p Son especies carismáticas que sirven como símbolo para atraer el apoyo gubernamental, del público o de posibles donantes, para la implementación y desarrollo de programas de conservación que involucren a la especie bandera y las especies menos llamativas con las que pudiera estar asociada (Caro et al., 2004, en Isasi. C, 2011). En general, son pocos los atributos que debe tener una especie bandera para cumplir con sus objetivos; basta con que sea llamativa y atraiga la atención (O´Doherty, 1999, en Isasi. C, 2011). En la mayoría de los casos, es ventajoso que la especie sea sensible a las perturbaciones, principalmente porque esta condición las hace más útiles como sucedáneas.
+
+  
+  
+				h3 ESTATUS DE LAS ESPECIES 
+				
+				p Una característica muy importante en la elección de la especie con la que se trabaje además de las ya mencionadas categorías de las especies sucedáneas es el estado de conservación en el que se encuentre tanto el ecosistema como la especie en sí. Por lo tanto, es importante tener en cuenta las diferentes categorías según:
+				
+				h4 Unión Internacional para la Conservación de la Naturaleza (UICN)
+				
+				p La Lista Roja de la UICN es la fuente de información más completa acerca del estado de conservación mundial de las especies vegetales y animales. Existen nueve categorías (Tabla. 2) en el sistema de la Lista Roja de la UICN (UICN,2019)
+				
+				
+				//- ---------------- 
+				//- ---------------- Image / video + caption
+				//- ---------------- 		
+				+image-caption('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/turismo-territoriales/images/mod-2/003.jpg', 'example-1', 'https://ubosquemoodle.unbosque.edu.co/diseno/cursos/turismo-territoriales/images/mod-2/003.jpg', 'Texto para acompañar imagen')
+					span Tabla 2. Descripción categorías de la lista roja IUCN. Fuente: Elaboración propia 
+							
+							
+							
+							
+				h4  Resolución 1912 de 2015 del Ministerio de Ambiente y Desarrollo Sostenible (MADS)
+				
+				p “Por la cual se establece los listados de las especies silvestres amenazadas de la diversidad biológica colombiana continental y marino costera que se encuentren en el territorio nacional y se dictan otras disposiciones”
+				
+				h4 Artículo 4. CATEGORIAS PARA ESPECIES AMENZADAS. Las especies amenazadas se categorizan de la siguiente manera:
+				
+				//- ---------------- 
+				//- ---------------- Tabs
+				//- ---------------- 
+				+tabs-containers
+					+set('titles')
+						li.active: a(href='#1' data-toggle='tab') 1
+						li: a(href='#2' data-toggle='tab') 2
+						li: a(href='#3' data-toggle='tab') 3
+						li: a(href='#4' data-toggle='tab') 4
+						
+					+set('content')
+						div.tab-pane.fade.active.in#1
+							p En Peligro Crítico (CR): Aquellas que están enfrentando un riesgo de extinción extremadamente alto en estado de vida silvestre 
+						div.tab-pane.fade#2
+							p En Peligro (EN): Aquellas que están enfrentando un riesgo de extinción muy alto en estado de vida silvestre 
+						div.tab-pane.fade#3
+							p Vulnerable (VU): Aquellas que están enfrentando un riesgo de extinción alto en vida silvestre. 
+						div.tab-pane.fade#4
+							p Convención Internacional de Especies de Fauna y Flora Silvestres (CITES)
+							
+							
+							
+							
+				p Para determinar las especies de valor comercial, se toma como base los apéndices del (CITES), la cual ha propuesto tres categorías (Tabla. 3)  para las especies de fauna y flora silvestre que están sujetas a las actividades de comercio internacional, con el fin de proteger las especies que por su comercio pueden estar amenazadas (CITES,2107)
+  
+  
+				
+				//- ---------------- 
+				//- ---------------- Tables
+				//- ----------------
+				+tables-containers('Tabla 3. Descripción de los apéndices del CITES ')
+					+set('thead')
+						tr
+							th Apéndice
+							th Descripción
+							th Incluye
+							th Requerimiento
+					+set('tr')
+						tr
+							td Apéndice I
+							td Comercio internacional de especímenes silvestres NO PERMITIDO
+							td Especies en peligro de extinción
+							td Permiso de importación y permiso de exportación
+						tr
+							td Apéndice II
+							td Comercio internacional de especímenes silvestres permitido
+							td Especies que necesariamente no estén en peligro de extinción
+							td Permiso de exportación
+						tr
+							td Apéndice III
+							td Comercio internacional de especímenes silvestres permitido
+							td Especies reglamentadas en jurisdicciones particulares
+							td Permiso de exportación o certificado de origen
+						tr
+							td.small(colspan='4') Fuente: Elaboración propia 
+							
+							
+							
+				h4 LIBROS ROJOS
+
+				p El libro presenta información biológica actualizada para especies amenazadas y casi amenazadas, e incluye además ilustraciones, mapas de distribución geográfica, registros y grado de amenaza de diferentes especies a nivel nacional.
+
+				h4 Especies endémicas 
+
+				p Las especies endémicas son aquellas que se encuentran restringida a una ubicación geográfica muy concreta o específica, por lo tanto, sus poblaciones pueden ser reducidas en número de individuos por lo cual pueden representar una mayor vulnerabilidad. 
+  
+  
+				h3 MANEJO DE FAUNA Y FLORA SILVESTRE 
+				
+				p Además de tener en cuenta las especies con las diferentes categorías ya mencionadas para programas y estrategias de conservación transversalmente podemos identificar en nuestro territorio especies que por sus características tan particulares decolores, formas y tamaños, etc., se conviertan en especies carismáticas y, por ende, puedan manejarse como un recurso turístico de alta importancia para la región en marco de protocolos y buenas prácticas de manejo y observación de vida silvestre.
+
+				p Protocolos manejo y observación de vida silvestre en el turismo 
+
+				p Aun cuando la observación de fauna y flora se considera amigable con la biodiversidad y su conservación, la práctica de esta actividad al aire libre puede producir perturbaciones en los ecosistemas y en las especies que los conforman. Por lo tanto, se deben tener en cuenta diferentes consideraciones generales y específicas.
+  
+  
+				//- ---------------- 
+				//- ---------------- Accordion
+				//- ---------------- 
+				+accordion('accordion1')
+					+accordion-item('#accordion1', '#box5', 'box5', 'Mamíferos terrestres')
+						p Las consideraciones puntuales para este grupo se definen en la existencia de un encuentro casual, en el cual se da la posibilidad de acercamiento para fotografía, se respete la distancia y no se persiga el animal.
+						
+					+accordion-item('#accordion1', '#box6', 'box6', 'Mamíferos acuáticos')
+						p Guía de avistamiento responsable de mamíferos acuáticos en Colombia elaborada por Ministerio de Ambiente y Desarrollo Sostenible, y la Guía de observación responsable de delfines en la amazonia colombiana, desarrollada por la fundación Omacha.
+						
+					+accordion-item('#accordion1', '#box7', 'box7', 'Anfibios y reptiles')
+						p Para este grupo no existen guías o protocolos establecido sin embargo se toman normas básicas de bioseguridad. 
+						
+					+accordion-item('#accordion1', '#box8', 'box8', 'Aves')
+						p Código de Ética para el aviturista de la Asociación Americana de Observadores de Aves y la Guía de buenas prácticas para la actividad del aviturismo en Colombia, elaborado por Ministerio de Comercio, Industria y Turismo Programa de Transformación Productiva (PTP) del Ministerio de Comercio, Industria y Turismo, en la cual se dan las pautas para todas las actividades relacionadas con el aviturismo (Fotografía, uso de play backs, vestuario adecuado, etc.)
+						
+					+accordion-item('#accordion1', '#box9', 'box9', 'Flora')
+						p La distancia de observación de flora debe contemplar variables como: habito, forma de reproducción y meses de floración, ya que algunas especies tienen formas de dispersión específicas, por la tanto se debe conservar una distancia prudente, para no afectar la germinación de estas.
+  
+  
+  
+  
+  
+  
+  
+				h3 Bibliografía de referencia 
+				
+				ul
+					li SIB. (2019). <a href="#" target="_blank">https://sibcolombia.net/actualidad/biodiversidad-en-cifras</a>
+					li IUCN. (2019). Obtenido de Obtenido de IUCN Red List of threatened Species: <a href="https://www.iucnredlist.org" target="_blank">www.iucnredlist.org</a>
+					li CITES. (2017). CITES. Obtenido de CITES Web Sites: <a href="https://www.cites.org/sites/default/files/esp/app/2013/S-Appendices-2013-06-12.pd" target="_blank">https://www.cites.org/sites/default/files/esp/app/2013/S-Appendices-2013-06-12.pdf</a>
+					li MADS (2015) Resolución 1912 de 2015 del Ministerio de Ambiente y Desarrollo Sostenible
+					li Isasi. C, (2011), LOS CONCEPTOS DE ESPECIES INDICADORAS, PARAGUAS, BANDERAS Y CLAVES: SU USO Y ABUSO EN ECOLOGÍA DE LA CONSERVACIÓN. Asociación Interciencia Venezuela
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-2')
+				
+				//- progreso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=356255&chapterid=9911', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=356255&chapterid=9913', 'forward', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

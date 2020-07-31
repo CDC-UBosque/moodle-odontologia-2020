@@ -1,0 +1,109 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				//+menu
+				div#menu
+			
+				//- banner modulo 1
+				+banner
+				
+				h1 3. Temas/estructura
+			
+				h3 Ecología del paisaje (mosaico de coberturas)
+				
+				h4 ECOLOGÍA DEL PAISAJE
+				
+				p “El todo es más que la suma de sus partes" — Aristóteles
+
+				p La base epistemológica general de la Ecología del Paisaje (EP) está dada por la Teoría General de Sistemas (TGS) (von Bertalanffy 1968). Este marco teórico considera que la realidad está compuesta por unidades ordenadas en una estructura sistémica de jerarquías.
+				p El término jerarquía fue conceptualizado por Koestler (1968), como un sistema organizacional multinivelado, estratificado y con patrón de ramificaciones, que subdivide los sistemas en subsistemas, los cuales a su vez se ramifican en subsistemas de orden inferior, siendo cada una de estas estructuras intermedias semiautónomas que componen niveles de complejidad creciente (Etter,.2014)
+				p Entendiendo el paisaje como un subsistema que hace parte de un sistema global, es necesario conocer la escala de estudio en la que nos encontramos cuando nos referimos a este.  Reconociendo la concepción de paisaje como un complejo de sucesivos niveles de agregación de unidades que resultan de las relaciones que se dan entre los factores formadores de los ecosistemas (Clima, litología, suelos, vegetación, fauna, actividades humanas, ...) (Etter,.2014)
+
+				p Para entender la dinámica entre los sistemas y subsistemas esta la "ley de los niveles de integración" de Feibelman (1954) (Etter,.2014), la cual puede ser aplicada desde el punto de vista ecosistémico. 
+				
+				//- ---------------- 
+				//- ---------------- Image / video + caption
+				//- ---------------- 		
+				+image-caption('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/turismo-territoriales/images/mod-2/001.jpg', 'example-1', 'https://ubosquemoodle.unbosque.edu.co/diseno/cursos/turismo-territoriales/images/mod-2/001.jpg', 'Texto para acompañar imagen')
+					span Gráfica 1. Esquema de una estructura jerárquica con diferentes niveles de integración de componentes. Fuente: (Etter, 2014)
+					
+				h3 ESCALAS DE ESTUDIO POR NIVELES
+				
+				//- ---------------- 
+				//- ---------------- Accordion
+				//- ---------------- 
+				+accordion('accordion1')
+					+accordion-item('#accordion1', '#box1', 'box1', '1ER NIVEL – PLANETARIO ')
+						p El primer es el sistema planetario terrestre, que está formado por cuatro subsistemas abiertos y dinámicos, que interaccionan entre sí.  Estos   subsistemas   son   interdependientes   unos   de   los   otros   y   se encuentran   en   equilibrio   dinámico (Benavides, 2015).
+					+accordion-item('#accordion1', '#box2', 'box2', '2DO NIVEL - BIOMA')
+						p El segundo nivel que encontramos es el Bioma, que 1953 se define en términos sistémicos por Odum, donde se entiende como la mayor unidad de comunidad terrestre que resulta conveniente identificar, donde la forma de vida, de la vegetación climática clímax es uniforme (Etter, 2014) Resumidamente se puede entender Bioma como “la comunidad biótica integrada por plantas y animales” (Benavides, 2015).
+					+accordion-item('#accordion1', '#box3', 'box3', '3ER NIVEL - PAISAJE ')
+						p Un paisaje puede definirse como "una porción de la superficie terrestre con patrones de homogeneidad, consistente en un sistema complejo conformado por la actividad/interacción de las rocas, el agua, el aire, las plantas, los animales y el hombre, que por su fisonomía es una entidad reconocible y diferenciable de otras vecinas 
+
+						p Los elementos de paisaje por su parte son el resultado de la interacción de los factores formadores del paisaje (clima, geología, hidrología, suelos, vegetación, fauna, hombre) así como de su variabilidad a través del espacio geográfico, a lo largo del tiempo. (Parra, 2005)
+						
+						//- ---------------- 
+						//- ---------------- Image / video + caption
+						//- ---------------- 		
+						+image-caption('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/turismo-territoriales/images/mod-2/002.jpg', 'example-1', 'https://ubosquemoodle.unbosque.edu.co/diseno/cursos/turismo-territoriales/images/mod-2/002.jpg', 'Texto para acompañar imagen')
+							span Gráfica 2. Factores formadores del Paisaje y sus interrelaciones (Etter 1994, adaptado de Zonneveld 1979). Fuente: (Etter, 2014)
+							
+						p Para el estudio del paisaje es importante tener en cuenta los patrones estructurales, funcionales y temporales: 
+						
+						h4 Temporalidad
+						p Patrones de la dinámica de los cambios de la estructura y el funcionamiento en el tiempo. Cambios cíclicos y cambios unidireccionales. 
+
+						h4 Estructura 
+						p Configuraciones espaciales de los ecosistemas o elementos componentes en cuanto a la composición y distribución de energía, materia y especies.
+
+						h4 Funcionamiento 
+
+						p Interacción entre los factores formadores del paisaje y los elementos de paisaje, en cuanto a los tipos, las intensidades y las direcciones de los flujos de energía, materia y especies.
+						
+						
+					+accordion-item('#accordion1', '#box4', 'box4', '4TO   NIVEL – ECOSISTEMA ')
+						p Este nivel representa más complejidad en su entendimiento, El término “Ecosistema” tiene una amplia gama definiciones, fue acuñado por Tansley en 1935 como el “complejo de organismos junto con los factores físicos de su medio ambiente” en un lugar determinado, y propuesto además como una de las unidades básica de la naturaleza.
+
+						p Actualmente se reconoce que estos brindan servicios ecosistémicos necesarios para soportar la vida y los requerimientos humanos, por lo tanto, es de suma importancia entender la dinámica de estos para proponer estrategias de mitigación y conservación (Armenteras.et al, 2015)
+
+  
+				h3 Bibliografía de referencia 
+				
+				ul
+					li Etter. A, (2014) INTRODUCCIÓN A LA ECOLOGÍA DEL PAISAJE: Un Marco de Integración para los Levantamientos Ecológicos. Pontificia Universidad Javeriana
+
+					li Benavides. A, (2015) El Sistema Terrestre como Metasistema o Sistema de Sistemas. Universidad Autónoma Agraria Antonio Narro (UAAAN) <a href="https://www.researchgate.net/publication/305940872_El_Sistema_Terrestre_como_Metasistema_o_Sistema_de_Sistemas_The_Terrestrial_System_as_Metasystem_or_System_of_Systems" target="_blank">https://www.researchgate.net/publication/305940872_El_Sistema_Terrestre_como_Metasistema_o_Sistema_de_Sistemas_The_Terrestrial_System_as_Metasystem_or_System_of_Systems</a>
+
+					li Odum, Eugene P.: Ecología. Tercera Edición. (Versión Española del Sr Gerhard Ottenwaelder, Carlos. Traducción de la edición original en inglés “Fundamentals of Ecology”, 1953). Nueva Editorial Interamericana, S. A. de C. V. 1982
+
+					li Armenteras. D, González. T.M, Vergara. L.K, Luque. F.J, Rodríguez. N, Bonilla. M.A, (2015) Revisión del concepto de ecosistema como “unidad de la naturaleza” 80 años después de su formulación. Ecosistemas revista de ecología y ambiente. <a href="https://www.revistaecosistemas.net/index.php/ecosistemas/article/view/1110" target="_blank">https://www.revistaecosistemas.net/index.php/ecosistemas/article/view/1110</a>
+
+					li Parra. J, (2005) BIODIVERSIDAD Y CONSERVACIÓN EN LOS PARQUES NACIONALES NATURALES DE COLOMBIA. Biodiversidad y conservación en los PNN de Colombia
+
+					li Meneses, L., Tinjaca, Z., 2017. Plan de Manejo del Área Única Los Estoraques. Parques Nacionales Naturales de Colombia.
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-2')
+				
+				//- progreso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=356255&chapterid=9910', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=356255&chapterid=9912', 'forward', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

@@ -1,0 +1,49 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				//+menu
+				div#menu
+			
+				//- banner modulo 1
+				+banner
+				
+				h1 Presentación del Módulo
+			
+				h2 Módulo 1 / Introducción y Conceptualización
+				
+				p Tutor/docente: Cristina Jaramillo Marin
+				
+				p Fecha inicio: / Fecha de Finalización: 
+				
+
+				p El módulo se direcciona para que el estudiante conozca los fundamentos, antecedentes y conceptos del turismo, así como su evolución a escala global, nacional y local, se avanza en el conocimiento del turismo de naturaleza cómo una de las principales alternativas para el fortalecimiento y potencialización del territorio. 
+
+				p El módulo se encuentra estructurado en tres momentos; inicialmente, el contexto del turismo, asociado a los principales hitos históricos, así como a los datos sobre la dinámica del turismo mundial. Luego, la estructura organizativa del turismo mundial, el turismo y su dinámica en Colombia, los principales conceptos asociados a las tipologías del turismo y finalmente el turismo de naturaleza y los principales elementos para su comprensión. 
+  
+				
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-1')
+				
+				//- progreso y contador
+				+paginador('#', 'disabled', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=351046&chapterid=9793', 'forward', 'Siguiente')
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

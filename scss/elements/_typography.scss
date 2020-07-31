@@ -1,0 +1,114 @@
+// -----------------------
+// typography
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	font-family: $font_hel_light;
+	font-size: $font_txt;
+	color: $color_text;
+	
+	
+	h1{
+		font-style: italic;
+		@include max-width;
+		@include font_universal (
+			$font_family_line_height: 37px,
+			$font_family_weight: 300,
+			$font_family_size: 35px,
+			$font_family_color: $color_brand_orange,
+			$font_family_letter_spacing: 0,
+			$font_family_group: $font_myr_semibold
+		);
+		margin: 2rem auto 1rem;
+		display: block;
+	}
+	
+	h2{
+		font-style: italic;
+		@include max-width;
+		@include font_universal (
+			$font_family_line_height: 32px,
+			$font_family_weight: 300,
+			$font_family_size: 30px,
+			$font_family_color: $color_brand_orange !important,
+			$font_family_letter_spacing: 0,
+			$font_family_group: $font_myr_semibold
+		);
+		margin: 2rem auto 1rem !important;
+		display: block;
+		
+		span{
+			color: $color_white !important;
+			font-size: x-large;
+			background: $color_brand_orange;
+			display: block;
+			padding: 1rem;
+			margin-right: 4rem;
+			margin-top: 1rem;
+		}
+		
+	}
+	
+	h3{
+		font-style: italic;
+		@include max-width;
+		@include font_universal (
+			$font_family_line_height: 28px,
+			$font_family_weight: 300,
+			$font_family_size: 25px,
+			$font_family_color: $color_brand_orange !important,
+			$font_family_letter_spacing: 0,
+			$font_family_group: $font_myr_semibold
+		);
+		margin: 2rem auto 1rem;
+		display: block;
+	}
+	
+	h4{
+		font-style: italic;
+		@include max-width;
+		@include font_universal (
+			$font_family_line_height: 22px,
+			$font_family_weight: 300,
+			$font_family_size: 20px,
+			$font_family_color: $color_brand_orange !important,
+			$font_family_letter_spacing: 0,
+			$font_family_group: $font_myr_semibold
+		);
+		margin: 2rem auto 1rem;
+		display: block;
+	}
+	
+	h5{
+		font-style: italic;
+		@include max-width;
+		@include font_universal (
+			$font_family_line_height: 18px,
+			$font_family_weight: 300,
+			$font_family_size: 15px,
+			$font_family_color: $color_brand_orange !important,
+			$font_family_letter_spacing: 0,
+			$font_family_group: $font_myr_semibold
+		);
+		margin: 2rem auto 1rem;
+		display: block;
+	}
+	
+	h6{
+		font-style: italic;
+		@include max-width;
+		@include font_universal (
+			$font_family_line_height: 13px,
+			$font_family_weight: 300,
+			$font_family_size: 11px,
+			$font_family_color: $color_brand_orange !important,
+			$font_family_letter_spacing: 0,
+			$font_family_group: $font_myr_semibold
+		);
+		margin: 2rem auto 1rem;
+		display: block;
+	}
+	
+}
